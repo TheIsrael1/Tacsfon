@@ -9,21 +9,24 @@ const Sidebar
    </Icon>
    <SidebarWrapper>
     <SidebarMenu>
-     <SidebarLink onClick={toggle} to="about">
+    <SidebarLink onClick={toggle} to="/">
+      Home
+     </SidebarLink>
+     <SidebarLink onClick={toggle} to="/about">
       About
      </SidebarLink>
-     <SidebarLink onClick={toggle} to="discover">
-      Discover
+     <SidebarLink onClick={toggle} to="/media">
+      Media
      </SidebarLink>
-     <SidebarLink onClick={toggle} to="services">
-      Services
+     <SidebarLink onClick={toggle} to="/events">
+      Events
      </SidebarLink>
-     <SidebarLink onClick={toggle} to="signup">
-      Sign Up
+     <SidebarLink onClick={toggle} to="gallery">
+      Gallery
      </SidebarLink>
     </SidebarMenu>
-    <SideBtnWrap><SidebarRoute to="/signin">
-     Sign In
+    <SideBtnWrap><SidebarRoute to="/contact">
+     Contact Us
      </SidebarRoute></SideBtnWrap>
    </SidebarWrapper>
   </SidebarContainer> 

@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
    left: 0;
    right: 0;
    bottom: 0;
-   background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+   background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 100%), linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
    z-index: 2;
  }
 
@@ -55,11 +55,16 @@ export const HeroContainer = styled.div`
 
  export const HeroH1 = styled.h1`
  color: #fff;
- font-size: 48px;
+ font-family: 'Prata', serif;;
+ font-size: 68px;
  text-align: center;
+ padding: 5px;
+ border-color: #fff;  
+  border-width: 2px;  
+  border-style: solid;
 
  @media screen and (max-width: 768px){
-  font-size: 40px;
+  font-size: 46px;
  }
 
  @media screen and (max-width: 480px){
@@ -68,33 +73,35 @@ export const HeroContainer = styled.div`
  `
 
  export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-top: 30px;
   color: #fff;
-  font-size: 24px;
+  font-family: cursive;
+  font-size: 20px;
   text-align: center;
   max-width: 600px;
  
     @media screen and (max-width: 768px){
-  font-size: 24px;
+  font-size: 16px;
  }
 
  @media screen and (max-width: 480px){
-  font-size: 18px;
+  font-size: 16px;
  }
   `
 
   export const HeroBtnWrapper = styled.div`
    margin-top: 32px;
    display: flex;
-   flex-direction: column;
+   flex-directSion: row;
    align-items: center;
+   justify-content: center;
   `
 
   export const ArrowForward = styled(MdArrowForward)`
-   margin-left: 8px;
+   margin-left: 2px;
    font-size: 20px;
   `
   export const ArrowRight = styled(MdKeyboardArrowRight)`
-   margin-left: 8px;
+   margin-left: 2px;
    font-size: 20px;
   `

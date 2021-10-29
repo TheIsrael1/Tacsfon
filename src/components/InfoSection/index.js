@@ -9,7 +9,7 @@ import {
     TextWrapper, 
     TopLine, 
     Heading, 
-    Subtitle, 
+    Subtext, 
     BtnWrap, 
     ImgWrap, 
     Img
@@ -22,14 +22,14 @@ buttonLabel, img, alt, primary, dark, dark2,}) => {
   <>
    <InfoContainer lightBg={lightBg} id={id}>
   <InfoWrapper>
-   <InfoRow imgStart={imgStart}>
+   <InfoRow imgStart={false}>
     <Column1>
      <TextWrapper>
-      <TopLine>{topLine}</TopLine>
       <Heading lightText={lightText}>{headline}</Heading>
-      <Subtitle darkText={darkText}>{description}</Subtitle>
+      <TopLine>{topLine}</TopLine>
+      <Subtext darkText={darkText}>{description}</Subtext>
       <BtnWrap>
-       <Button to='home'
+       <Button to='/about'
         smooth={true}
         duration={500}
         spy={true}

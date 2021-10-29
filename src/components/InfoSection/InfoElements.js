@@ -70,10 +70,10 @@ export const InfoRow = styled.div`
    font-size: 32px;
   }
  `
- export const Subtitle = styled.p`
+ export const Subtext = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
  `
@@ -92,6 +92,7 @@ export const InfoRow = styled.div`
   margin: 0 0 10px 0;
   padding-right: 0;
   `
+  
 
 
 

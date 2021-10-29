@@ -18,41 +18,36 @@ const Footer = () => {
                         <FooterLinksWrapper>
                             <FooterLinkItems>
                                     <FooterLinkTitle> About Us</FooterLinkTitle>
-                                    <FooterLink to="/signin">How it works</FooterLink>
-                                    <FooterLink to="/signin">Testimonials</FooterLink>
-                                    <FooterLink to="/signin">Careers</FooterLink>
-                                    <FooterLink to="/signin">Investors</FooterLink>
-                                    <FooterLink to="/signin">Terms of Service</FooterLink>
+                                    <FooterLink to="/about">About</FooterLink>
+                                    <FooterLink to="/about">Units</FooterLink>
+                        
                             </FooterLinkItems>
                             <FooterLinkItems>
-                                    <FooterLinkTitle> Contact Us</FooterLinkTitle>
-                                    <FooterLink to="/">Contact</FooterLink>
-                                    <FooterLink to="/">Support</FooterLink>
-                                    <FooterLink to="/">Destinations</FooterLink>
-                                    <FooterLink to="/">Sponsorships</FooterLink>
+                                    <FooterLinkTitle> Media</FooterLinkTitle>
+                                    <FooterLink to="/media">Word</FooterLink>
+                                    <FooterLink to="/media">Music</FooterLink>
+                                    <FooterLink to="/media">Drama</FooterLink>                          
                             </FooterLinkItems>
                         </FooterLinksWrapper>
                         <FooterLinksWrapper>
-                            <FooterLinkItems>
-                                    <FooterLinkTitle> Videos</FooterLinkTitle>
-                                    <FooterLink to="/">Submit Video</FooterLink>
-                                    <FooterLink to="/">Ambassadors</FooterLink>
-                                    <FooterLink to="/">Agency</FooterLink>
-                                    <FooterLink to="/">Influencer</FooterLink>                           
+                        <FooterLinkItems>
+                                    <FooterLinkTitle> Contact Us</FooterLinkTitle>
+                                    <FooterLink to="/contact">Contact</FooterLink>
+                                    <FooterLink to="/contact">Our Location</FooterLink>
                             </FooterLinkItems>
+
                             <FooterLinkItems>
                                     <FooterLinkTitle> Social Media</FooterLinkTitle>
                                     <FooterLink to="/">Instagram</FooterLink>
                                     <FooterLink to="/">Facebook</FooterLink>
                                     <FooterLink to="/">Youtube</FooterLink>
-                                    <FooterLink to="/">Twitter</FooterLink>                            
                             </FooterLinkItems>
                         </FooterLinksWrapper>
                     </FooterLinksContainer>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo onClick={toggleHome} to="/"> dolla </SocialLogo>
-                            <WebsiteRights> dolla © 2020 {new Date().getFullYear()} All rights reserved </WebsiteRights>
+                            <SocialLogo onClick={toggleHome} to="/"> Tacsfon UI </SocialLogo>
+                            <WebsiteRights> Tacsfon © {new Date().getFullYear()} All rights reserved </WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                                     <FaFacebook />
@@ -62,12 +57,6 @@ const Footer = () => {
                                 </SocialIconLink>
                                 <SocialIconLink href="/" target="_blank" aria-label="Youtube">
                                     <FaYoutube />
-                                </SocialIconLink>
-                                <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                                    <FaTwitter />
-                                </SocialIconLink>
-                                <SocialIconLink href="/" target="_blank" aria-label="LinkedIn">
-                                    <FaLinkedin />
                                 </SocialIconLink>
                             </SocialIcons>
                         </SocialMediaWrap>

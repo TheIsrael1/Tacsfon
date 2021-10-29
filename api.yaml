@@ -1,0 +1,64 @@
+
+GET
+/excos
+type: object
+description: excos details
+properties:
+-id
+-post
+-name
+-data
+-dob(date of birth)
+
+
+/media/video
+type: object
+description: fellowship videos
+properties:
+-id
+-link
+-title
+-date
+
+/media/audio
+type: object
+description: fellowship audios
+-id
+-link
+-title
+-date
+
+/media/publications
+type: object
+description: fellowship docs, publications
+-id
+-link
+-title
+-date
+
+/events
+type: object
+description: fellowship events
+-id
+-image
+-title
+-summary
+-date
+-venue
+
+/gallery
+type: object
+description: fellowship images
+-id
+-link
+title
+date
+
+POST
+/message
+type: object
+description: recieve message
+-name
+-category
+-email
+-message

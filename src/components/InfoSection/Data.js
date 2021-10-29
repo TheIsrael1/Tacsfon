@@ -21,19 +21,22 @@ export const homeObjOne = {
     darkText: false
 };
 export const homeObjTwo = {
-    id: 'discover',
+    id: 'About',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Unlimitedd Access',
-    headline: 'Unlimited access With Zero Fees',
-    description: 'Join us today to be able to send unlimited transactions without getting charged any fees.',
-    buttonLabel: 'Get Started',
+    topLine: 'The Apostolic Church Student Fellowship of Nigeria',
+    headline: 'About Us',
+    description: `TACSFON UI is a place where men are made, formed and built from lively stones before taken to build lively stones.
+    The watchword of the fellowship is 1Tim 4:12: let no man despise your youth but be thou an example of the believers, in word, in conversation, in charity in spirit, in faith, in purity.
+    The fellowship also reckons with the name "HOUSEHOLD OF REFUGE"
+    `,
+    buttonLabel: 'More',
     imgStart: true,
-    img: logo3,
+    img: logo5,
     alt: 'bank',
-    dark: false,
-    primary: false,
+    dark: true,
+    primary: true,
     darkText: true
 };
 export const homeObjThree = {

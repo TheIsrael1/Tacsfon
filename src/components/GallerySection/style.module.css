@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.navbar-logo {
+  font-family: "Open Sans";
+  font-size: 24px;
+  color: #fff;
+  background-color: #0a4f56;
+}
+
+.con{
+  margin: 100px 0;
+  min-height: 60vh;
+}

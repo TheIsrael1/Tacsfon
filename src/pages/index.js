@@ -4,7 +4,9 @@ import Sidebar from '../components/Sidebar'
 import HeroSection from './../components/HeroSection/index';
 import InfoSection from './../components/InfoSection/index';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
-import Services from '../components/Services';
+import Weekly from '../components/Weekly';
+import Upcoming from '../components/Upcoming';
+import Message from '../components/MessageSection'
 import Footer from '../components/Footer/index';
 
 const Home = () => {
@@ -20,13 +22,14 @@ const Home = () => {
   <Sidebar isOpen={isOpen} toggle={toggle}/>
   <Navbar toggle={toggle}/>
   <HeroSection />
-  <InfoSection {...homeObjOne}/>
   <InfoSection {...homeObjTwo}/>
-  <Services/>
-  <InfoSection {...homeObjThree}/>
+  <Weekly />
+  <Upcoming />
+  <Message />
   <Footer />
   </>
  )
+ 
 }
 
 export default Home
