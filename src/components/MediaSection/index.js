@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import axios  from 'axios'
 import ReactPlayer from 'react-player'
 import {MediaContainer, MediaWrapper, MediaH1} from './MediaSectionElements'
+import {MdMovieCreation as Vid} from 'react-icons/md'  
+import {MdAudiotrack as Aud} from 'react-icons/md'   
 
 
 const baseUrl= `https://tacsfonui.org/`;
@@ -49,19 +51,15 @@ const MediaSection = () => {
     return (
         <>
         <MediaContainer>
-            <MediaH1>Videos</MediaH1>
+            <MediaH1>Videos<Vid style={{position: "relative", top:"5", left:"2px"}}/></MediaH1>
             <MediaWrapper>
                 {
                    video && video.map((v, idx) =>(
                     <ReactPlayer 
                     key={idx}
                     // light={true}
-                    // width="20rem"
-                    // height="20rem"
-                    style={{
-                        height: "20rem",width: "auto", maxWidth: "20rem"
-                        
-                    }}
+                    width="16rem"
+                    height="20rem"
                     controls={true}
                     pip={true}
                     url={`${baseUrl}${v.videos_path}`} />
@@ -70,17 +68,17 @@ const MediaSection = () => {
             </MediaWrapper>
         </MediaContainer>
         <MediaContainer>
-            <MediaH1>Audios</MediaH1>
+            <MediaH1>Audios <Aud style={{position: "relative", top:"5"}}/></MediaH1>
             <MediaWrapper>
             {
                    audio && audio.map((a, idx) =>(
                     <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                    <img src={baseUrl + a.audios_directory}
+                    <img src={a.audios_directory ? baseUrl + a.audios_directory : `https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?cs=srgb&dl=pexels-elviss-railijs-bit%C4%81ns-1389429.jpg&fm=jpg` }
                     style={{height: "12rem", width: "250px"}}
                     alt="" />
                     <ReactPlayer
                     key={idx}
-                    width="20rem"
+                    width="16rem"
                     height="4rem"
                     style={{
                         height: "4rem", maxWidth: "20rem"

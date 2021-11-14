@@ -28,13 +28,13 @@ const HeroSection = () => {
     Let no man despise your youth 1Tim 4:12
     </HeroP>
     <HeroBtnWrapper>
-     <Button smooth={true} duration={500} spy={true} exact='true' offset={-80} to="signup" onMouseEnter={onHover} onMouseLeave={onHover}
+     <Button smooth={true} duration={500} spy={true} exact='true' offset={-80} to="contact" onMouseEnter={onHover} onMouseLeave={onHover}
      primary="true"
      dark="true"
      >
      Get Started {hover ? <ArrowForward /> : <ArrowRight />}
      </Button>
-     <Button smooth={true} duration={500} spy={true} exact='true' offset={-80} to="signup" onMouseEnter={onHover2} onMouseLeave={onHover2}
+     <Button smooth={true} duration={500} spy={true} exact='true' offset={-80} to="event" onMouseEnter={onHover2} onMouseLeave={onHover2}
      primary="true"
      dark="true"
      >

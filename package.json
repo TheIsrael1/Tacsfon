@@ -1,5 +1,6 @@
 {
-  "name": "dolla-site",
+  "name": "tasfon",
+  "homepage": "tacsfonui.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

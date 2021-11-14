@@ -40,7 +40,7 @@ font-size: 1.8rem;
 color: #010606;
 padding: 0 2rem;
 // border: 1px solid #000;
-box-shadow: 5px 5px 7px #aaaaaa;
+// box-shadow: 1px 1px 2px #aaaaaa;
 margin-bottom: 3rem;
 
 @media screen and (max-width: 480px){
