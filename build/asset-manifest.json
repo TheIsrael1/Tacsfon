@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/tacsfonui.org/static/css/main.e436a337.chunk.css",
+    "main.js": "/tacsfonui.org/static/js/main.5169139b.chunk.js",
+    "main.js.map": "/tacsfonui.org/static/js/main.5169139b.chunk.js.map",
+    "runtime-main.js": "/tacsfonui.org/static/js/runtime-main.7e2d3086.js",
+    "runtime-main.js.map": "/tacsfonui.org/static/js/runtime-main.7e2d3086.js.map",
+    "static/js/2.f62bcc36.chunk.js": "/tacsfonui.org/static/js/2.f62bcc36.chunk.js",
+    "static/js/2.f62bcc36.chunk.js.map": "/tacsfonui.org/static/js/2.f62bcc36.chunk.js.map",
+    "index.html": "/tacsfonui.org/index.html",
+    "static/css/main.e436a337.chunk.css.map": "/tacsfonui.org/static/css/main.e436a337.chunk.css.map",
+    "static/js/2.f62bcc36.chunk.js.LICENSE.txt": "/tacsfonui.org/static/js/2.f62bcc36.chunk.js.LICENSE.txt",
+    "static/media/svg-1.61f3ac8e.svg": "/tacsfonui.org/static/media/svg-1.61f3ac8e.svg",
+    "static/media/svg-2.31dc902b.svg": "/tacsfonui.org/static/media/svg-2.31dc902b.svg",
+    "static/media/svg-3.7675e4d2.svg": "/tacsfonui.org/static/media/svg-3.7675e4d2.svg",
+    "static/media/svg-4.fe787ae8.svg": "/tacsfonui.org/static/media/svg-4.fe787ae8.svg",
+    "static/media/svg-5.1be68dea.svg": "/tacsfonui.org/static/media/svg-5.1be68dea.svg",
+    "static/media/tacsfon-logo.7313eea4.png": "/tacsfonui.org/static/media/tacsfon-logo.7313eea4.png",
+    "static/media/video.9b60ca53.mp4": "/tacsfonui.org/static/media/video.9b60ca53.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e2d3086.js",
+    "static/js/2.f62bcc36.chunk.js",
+    "static/css/main.e436a337.chunk.css",
+    "static/js/main.5169139b.chunk.js"
+  ]
+}
