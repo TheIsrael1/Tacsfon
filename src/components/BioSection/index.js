@@ -10,23 +10,21 @@ const BioSection = () => {
 
     useEffect(()=>{
         axios.get(
-          `https://tacsfonui.org/api/excos`,  {
+          `https://api.hebbnet.com/api/excos`,  {
             headers: {
               'Accept': 'application/json',
             }
           } 
           ).then(res=> {
             
-            var response = res.data.toString().match(/{(.*)}/g)[0]
-            response = JSON.parse(response)
-            console.log("response", response)
-            const bio = response.payload.table_data;
+            // var response = res.data.toString().match(/{(.*)}/g)[0]
+            // response = JSON.parse(response)
+            // console.log("response", response)
+            const bio = res.data.payload.table_data;
             setBio(bio);
             }
         ).catch(err =>{
-          alert('error with server, click ok reload.')
-          window.location.reload();  
-          
+          console.log("error", err)
         })
       }, [])
 

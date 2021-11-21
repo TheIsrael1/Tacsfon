@@ -10,21 +10,22 @@ const EventSection = () => {
 
     useEffect(()=>{
         axios.get(
-          `https://tacsfonui.org/api/events`,  {
+          `https://api.hebbnet.com/api/events`,  {
             headers: {
               'Accept': 'application/json',
             }
           } 
           ).then(res=> {
-            var response = res.data.toString().match(/{(.*)}/g)[0]
-            response = JSON.parse(response)
-            console.log("response", response)
-            const events = response.payload.table_data;
+            // var response = res.data.toString().match(/{(.*)}/g)[0]
+            // response = JSON.parse(response)
+            // console.log("response", response)
+            const events = res.data.payload.table_data;
             setEvents(events);
             }
         ).catch(err =>{
-            alert('error with server, click ok reload.')
-            window.location.reload(); 
+            // alert('error with server, click ok reload.')
+            // window.location.reload(); 
+            console.log("error", err)
         })
       }, [])
   

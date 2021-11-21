@@ -36,23 +36,23 @@ const GallerySection = () => {
     
     useEffect(()=>{
       axios.get(
-        `https://tacsfonui.org/api/gallery`,  {
+        `https://api.hebbnet.com/api/gallery`,  {
           headers: {
             'Accept': 'application/json',
           },
         } 
         ).then(res=> {
           
-          var response = res.data.toString().match(/{(.*)}/)[0]
-          response = JSON.parse(response)
-          console.log("response", response)
-          const gallery = response.payload.table_data;
+          // var response = res.data.toString().match(/{(.*)}/)[0]
+          // response = JSON.parse(response)
+          // console.log("response", response)
+          const gallery = res.data.payload.table_data;
           setGallery(gallery);
           }
       ).catch(err =>{
         // alert('error with server, click ok reload.')
-        console.log(err)
         // window.location.reload();  
+        console.log("error", err)
         
       })
     }, [gallery])

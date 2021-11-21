@@ -16,17 +16,18 @@ const MediaSection = () => {
 
     useEffect(()=>{
         axios.get(
-          `https://tacsfonui.org/api/videos`
+          `https://api.hebbnet.com/api/videos`
           ).then(res=> {
-            var response = res.data.toString().match(/{(.*)}/g)[0]
-            response = JSON.parse(response)
-            console.log("response", response)
-             const video = response.payload.table_data;
+            // var response = res.data.toString().match(/{(.*)}/g)[0]
+            // response = JSON.parse(response)
+            // console.log("response", response)
+             const video = res.data.payload.table_data;
              setVideo(video);
             }   
         ).catch(err =>{
-            alert('error with server, click ok reload.')
-            window.location.reload(); 
+            // alert('error with server, click ok reload.')
+            // window.location.reload(); 
+            console.log("error", err)
         })
     
       console.log("okay")
@@ -34,17 +35,18 @@ const MediaSection = () => {
 
       useEffect(()=>{
         axios.get(
-          `https://tacsfonui.org/api/audios`
+          `https://api.hebbnet.com/api/audios`
           ).then(res=> {
-            var response = res.data.toString().match(/{(.*)}/g)[0]
-            response = JSON.parse(response)
-            console.log("response", response)
-             const audio = response.payload.table_data;
+            // var response = res.data.toString().match(/{(.*)}/g)[0]
+            // response = JSON.parse(response)
+            // console.log("response", response)
+             const audio = res.data.payload.table_data;
              setAudio(audio);
             }   
         ).catch(err => {
-            alert('error with server, click ok reload.')
-            window.location.reload(); 
+            // alert('error with server, click ok reload.')
+            // window.location.reload(); 
+            console.log("error", err)
         })
       }, [])
 
