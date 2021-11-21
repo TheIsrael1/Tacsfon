@@ -12,7 +12,7 @@ const Upcoming = () => {
    
    useEffect(()=>{
     axios.get(
-      `https://api.hebbnet.com/api/events`,  {
+      `http://api.hebbnet.com/api/events`,  {
         headers: {
           'Accept': 'application/json',
         }

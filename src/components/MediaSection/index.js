@@ -6,7 +6,7 @@ import {MdMovieCreation as Vid} from 'react-icons/md'
 import {MdAudiotrack as Aud} from 'react-icons/md'   
 
 
-const baseUrl= `https://tacsfonui.org/`;
+const baseUrl= `http://tacsfonui.org/`;
 
 
 const MediaSection = () => {
@@ -16,7 +16,7 @@ const MediaSection = () => {
 
     useEffect(()=>{
         axios.get(
-          `https://api.hebbnet.com/api/videos`
+          `http://api.hebbnet.com/api/videos`
           ).then(res=> {
             // var response = res.data.toString().match(/{(.*)}/g)[0]
             // response = JSON.parse(response)

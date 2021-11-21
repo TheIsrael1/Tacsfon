@@ -10,7 +10,7 @@ const BioSection = () => {
 
     useEffect(()=>{
         axios.get(
-          `https://api.hebbnet.com/api/excos`,  {
+          `http://api.hebbnet.com/api/excos`,  {
             headers: {
               'Accept': 'application/json',
             }

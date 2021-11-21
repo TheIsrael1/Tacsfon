@@ -36,7 +36,7 @@ const GallerySection = () => {
     
     useEffect(()=>{
       axios.get(
-        `https://api.hebbnet.com/api/gallery`,  {
+        `http://api.hebbnet.com/api/gallery`,  {
           headers: {
             'Accept': 'application/json',
           },
