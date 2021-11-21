@@ -16,7 +16,7 @@ const MediaSection = () => {
 
     useEffect(()=>{
         axios.get(
-          `http://api.hebbnet.com/api/videos`
+          `https://hebbnet.com/tacsfon/api/videos`
           ).then(res=> {
             // var response = res.data.toString().match(/{(.*)}/g)[0]
             // response = JSON.parse(response)
@@ -35,7 +35,7 @@ const MediaSection = () => {
 
       useEffect(()=>{
         axios.get(
-          `https://api.hebbnet.com/api/audios`
+          `https://hebbnet.com/tacsfon/api/audios`
           ).then(res=> {
             // var response = res.data.toString().match(/{(.*)}/g)[0]
             // response = JSON.parse(response)
