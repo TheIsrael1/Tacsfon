@@ -37,6 +37,8 @@ cursor: pointer;
 display: flex;
 align-items: center;
 font-size: 25px;
+width: 6rem;
+height: .5rem;
 font-weight: bold;
 text-decoration: none;
 `;
