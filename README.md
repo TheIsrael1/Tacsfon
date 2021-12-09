@@ -1,9 +1,9 @@
-# Tacsfon
+# Tacsfon 🔥
 student fellowship website
 
 ## Stack
-React,styled components, api
-## Live link [Tacsfo UI](https://tacsfonui.netlify.app/)
+React, styled components, api
+## Live link [Tacsfon UI](https://tacsfonui.netlify.app/)
 
 # Getting Started with Create React App
 
