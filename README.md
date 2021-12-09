@@ -1,3 +1,9 @@
+# Tacsfon
+student fellowship website
+
+##Stack: React, styled components, api
+##Live link [Tacsfo UI](https://tacsfonui.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
